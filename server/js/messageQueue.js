@@ -6,6 +6,8 @@ module.exports.enqueue = (message) => {
 };
 
 module.exports.dequeue = () => {
-  // returns undefined if messages array is empty
+  if (messages.length === 0) { // returns undefined if messages array is empty
+    return undefined;
+  }
   return messages.shift();
 };
