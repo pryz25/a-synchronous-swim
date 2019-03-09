@@ -26,7 +26,7 @@ describe('server responses', () => {
     httpHandler.router(req, res);
     expect(res._responseCode).to.equal(200); // check if it receives a get request
     expect(res._ended).to.equal(true);
-    expect(res._data).to.equal('up' || 'down' || 'left' || 'right'); // check if get move function is called once
+    expect(res._data.toString()).to.be.a('string'); // check if get move function is called once
     done();
   });
 

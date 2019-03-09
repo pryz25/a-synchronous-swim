@@ -69,3 +69,5 @@ const SwimTeam = {
   }
 
 };
+
+exports = SwimTeam;
