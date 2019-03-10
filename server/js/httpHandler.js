@@ -4,7 +4,7 @@ const multipart = require('./multipartUtils');
 const dequeue = require('./messageQueue').dequeue;
 
 // Path for the background image ///////////////////////
-module.exports.backgroundImageFile = './background.jpg';
+module.exports.backgroundImageFile = './water-lg.jpg';
 ////////////////////////////////////////////////////////
 
 module.exports.router = (req, res, next = ()=>{}) => {
